@@ -3,6 +3,10 @@
 #
 # model = CCR1036-12G-4S
 # serial number = 575005846B36
-/tool e-mail
-set from="Backup Geolan <monitoramento@geolan.com.br>" port=465 server=\
-    mail.geolan.com.br tls=yes user=monitoramento@geolan.net.br
+/tool/e-mail/set\
+    from="Backup Geolan <monitoramento@geolan.com.br>"\
+    password=profallan.com@@2021\
+    port=465\
+    server=mail.geolan.com.br\
+    tls=yes\
+    user=monitoramento@geolan.net.br

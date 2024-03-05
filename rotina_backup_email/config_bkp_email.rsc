@@ -1,14 +1,25 @@
 # Variaveis de config
-:local nameFiles "anglo_morumbi"
-:local nameClientCapitalize "Anglo Morumbi"
-:local nameClientBold "ANGLO MORUMBI"
+
+# separado por underline (_) e minusuculo. EX: nome_exemplo
+:local nameFiles "nome_cliente"
+
+# Separado, com primeira letra maiuscula. EX: Nome Exemplo
+:local nameClientCapitalize "Nome Cliente"
+
+# Separado, tudo maiusculo. EX: NOME EXEMPLO
+:local nameClientBold "NOME CLIENTE"
+
 :local startDate "2024-03-09"
 :local startTime "03:00:00"
 
 # Config de email
-/tool e-mail
-set from="Backup Geolan <monitoramento@geolan.com.br>" port=465 server=\
-  mail.geolan.com.br tls=yes user=monitoramento@geolan.net.br
+/tool/e-mail/set\
+  from="Backup Geolan <monitoramento@geolan.com.br>"\
+  password=profallan.com@@2021\
+  port=465\
+  server=mail.geolan.com.br\
+  tls=yes\
+  user=monitoramento@geolan.net.br
 
 # Agenda tarefa
 /system/scheduler/add\
