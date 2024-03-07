@@ -27,7 +27,7 @@
     # Caso não tenha nenhum comentário então apenas adiciona as informações de Last seen
     :if ($comment = "") do={
       :set newComment "Last seen: $date $time ($timestamp)"
-    } else {
+    } else={
       # Caso tenha comentário, concatena com as informações de Last seen
       :set newComment "$comment | Last seen: $date $time ($timestamp)"
     }
